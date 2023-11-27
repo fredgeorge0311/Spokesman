@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="Qga-ve-KAn">
+            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XsN-lx-RFp">
+                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="K70-m6-SyV"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="XsN-lx-RFp" firstAttribute="leading" secondItem="Qga-ve-KAn" secondAttribute="leading" id="gZh-qG-r8R"/>
+                <constraint firstAttribute="trailing" secondItem="XsN-lx-RFp" secondAttribute="trailing" id="hQL-ft-rC5"/>
+                <constraint firstAttribute="bottom" secondItem="XsN-lx-RFp" secondAttribute="bottom" id="lVe-FR-HqB"/>
+                <constraint firstItem="XsN-lx-RFp" firstAttribute="top" secondItem="Qga-ve-KAn" secondAttribute="top" id="uPa-ZM-rAl"/>
+            </constraints>
+            <point key="canvasLocation" x="310" y="-21"/>
+        </view>
+        <collectionViewItem nibName="ColorPanelViewController" identifier="iconCollectionItem" id="pOF-2A-Jqh">
+            <connections>
+                <outlet property="imageView" destination="XsN-lx-RFp" id="SAX-sw-tWI"/>
+                <outlet property="view" destination="Qga-ve-KAn" id="lX2-fr-ntd"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+</document>

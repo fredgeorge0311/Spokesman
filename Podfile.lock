@@ -1,0 +1,51 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - BFColorPickerPopover (1.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - pop (1.0.12)
+  - XCDYouTubeKit (2.15.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
+  - BFColorPickerPopover
+  - FMDB
+  - pop (~> 1.0)
+  - XCDYouTubeKit
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BFColorPickerPopover
+    - FMDB
+    - pop
+    - XCDYouTubeKit
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  BFColorPickerPopover: dc6dcc90cad976c4ef96fe2ff69f004d0d008b56
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  XCDYouTubeKit: b120aced3d8638ffb570c5450cddb5a1dac448c7
+
+PODFILE CHECKSUM: a62aeb897755ad73ac6f81080f23a8ea502924a5
+
+COCOAPODS: 1.11.2

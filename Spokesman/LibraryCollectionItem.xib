@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderType="line" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Ozq-kc-lSe">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                    <view key="contentView" id="HHV-9j-Syj">
+                        <rect key="frame" x="1" y="1" width="98" height="118"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AcS-Ks-kBr">
+                                <rect key="frame" x="0.0" y="32" width="98" height="86"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="ku6-OL-oV9"/>
+                            </imageView>
+                            <textField verticalHuggingPriority="749" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="H0r-eb-SKT">
+                                <rect key="frame" x="0.0" y="21" width="100" height="18"/>
+                                <textFieldCell key="cell" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" alignment="center" id="9oH-Ld-w6S">
+                                    <font key="font" metaFont="system" size="7"/>
+                                    <string key="title">Heading Text
+Heading</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="aV2-sL-NgS">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8aY-jN-w0B"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" truncatesLastVisibleLine="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" id="Hvd-xu-eTM">
+                                    <font key="font" metaFont="system" size="5"/>
+                                    <string key="title">Multi line Description Text
+Multi line desc txt
+Multi line desc txt
+Multi line desc txt
+Multi line desc txt</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aV2-sL-NgS" secondAttribute="bottom" id="3Le-W9-zkh"/>
+                            <constraint firstItem="aV2-sL-NgS" firstAttribute="width" secondItem="HHV-9j-Syj" secondAttribute="width" constant="-2" id="3jk-IN-AgK"/>
+                            <constraint firstItem="aV2-sL-NgS" firstAttribute="top" secondItem="H0r-eb-SKT" secondAttribute="bottom" id="48m-H6-dGg"/>
+                            <constraint firstItem="AcS-Ks-kBr" firstAttribute="leading" secondItem="HHV-9j-Syj" secondAttribute="leading" id="BCu-dq-yCm"/>
+                            <constraint firstAttribute="bottom" secondItem="AcS-Ks-kBr" secondAttribute="bottom" constant="32" id="CH2-20-SW1"/>
+                            <constraint firstItem="aV2-sL-NgS" firstAttribute="top" secondItem="H0r-eb-SKT" secondAttribute="bottom" id="MLx-Kp-TDz"/>
+                            <constraint firstItem="AcS-Ks-kBr" firstAttribute="width" secondItem="HHV-9j-Syj" secondAttribute="width" id="R2E-Hg-Oyr"/>
+                            <constraint firstItem="H0r-eb-SKT" firstAttribute="width" secondItem="HHV-9j-Syj" secondAttribute="width" constant="-2" id="RZW-aB-ehk"/>
+                            <constraint firstItem="AcS-Ks-kBr" firstAttribute="top" secondItem="HHV-9j-Syj" secondAttribute="top" id="ZXN-QB-3tZ"/>
+                            <constraint firstAttribute="trailing" secondItem="H0r-eb-SKT" secondAttribute="trailing" id="tOz-9r-6bx"/>
+                            <constraint firstAttribute="trailing" secondItem="aV2-sL-NgS" secondAttribute="trailing" id="tsM-27-uXL"/>
+                        </constraints>
+                    </view>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ozq-kc-lSe" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="6as-Cr-Y2a"/>
+                <constraint firstItem="Ozq-kc-lSe" firstAttribute="height" secondItem="c22-O7-iKe" secondAttribute="height" id="ZfH-m7-BYd"/>
+                <constraint firstItem="Ozq-kc-lSe" firstAttribute="width" secondItem="c22-O7-iKe" secondAttribute="width" id="b7I-72-gpp"/>
+                <constraint firstItem="Ozq-kc-lSe" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="imB-eE-urk"/>
+            </constraints>
+            <point key="canvasLocation" x="440" y="491"/>
+        </customView>
+        <customObject id="K5s-UO-cPR" customClass="LibraryItem">
+            <connections>
+                <outlet property="itemContainerView" destination="Ozq-kc-lSe" id="CUy-Hz-fS7"/>
+                <outlet property="thumbImageView" destination="AcS-Ks-kBr" id="J4E-kj-wKm"/>
+                <outlet property="txtDesc" destination="aV2-sL-NgS" id="gw8-7c-sOK"/>
+                <outlet property="txtHeading" destination="H0r-eb-SKT" id="sYx-RP-mvm"/>
+                <outlet property="view" destination="c22-O7-iKe" id="frL-Qy-78e"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view wantsLayer="YES" id="b1u-2E-VdG">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <box hidden="YES" wantsLayer="YES" boxType="custom" borderType="line" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="iff-mK-X7H">
+                    <rect key="frame" x="0.0" y="0.0" width="173" height="99"/>
+                    <view key="contentView" id="NFP-I0-NMm">
+                        <rect key="frame" x="1" y="1" width="171" height="97"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <shadow key="shadow" blurRadius="2">
+                        <color key="color" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </shadow>
+                    <color key="borderColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </box>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-TX-opZ" customClass="KPCScaleToFillNSImageView">
+                    <rect key="frame" x="2" y="20" width="169" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vhB-TX-opZ" secondAttribute="height" multiplier="169:77" id="uF1-yu-74U"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="ZOi-BP-JiU"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zs4-By-UFD">
+                    <rect key="frame" x="-2" y="0.0" width="177" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="00:00:00" id="7vj-tT-rzT">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vhB-TX-opZ" firstAttribute="top" secondItem="b1u-2E-VdG" secondAttribute="top" constant="2" id="2LH-C2-pgq"/>
+                <constraint firstItem="iff-mK-X7H" firstAttribute="width" secondItem="b1u-2E-VdG" secondAttribute="width" id="7Eg-VQ-lQV"/>
+                <constraint firstItem="iff-mK-X7H" firstAttribute="centerX" secondItem="b1u-2E-VdG" secondAttribute="centerX" id="OUl-7M-eOs"/>
+                <constraint firstItem="iff-mK-X7H" firstAttribute="height" secondItem="b1u-2E-VdG" secondAttribute="height" id="Rt9-Iz-QcL"/>
+                <constraint firstItem="vhB-TX-opZ" firstAttribute="centerX" secondItem="b1u-2E-VdG" secondAttribute="centerX" id="WOd-6x-BKn"/>
+                <constraint firstItem="iff-mK-X7H" firstAttribute="centerY" secondItem="b1u-2E-VdG" secondAttribute="centerY" id="ZA0-uu-bfF"/>
+                <constraint firstItem="Zs4-By-UFD" firstAttribute="centerX" secondItem="b1u-2E-VdG" secondAttribute="centerX" id="cdV-IX-xlu"/>
+                <constraint firstAttribute="bottom" secondItem="vhB-TX-opZ" secondAttribute="bottom" constant="20" id="dWW-3u-pHf"/>
+                <constraint firstItem="vhB-TX-opZ" firstAttribute="leading" secondItem="b1u-2E-VdG" secondAttribute="leading" constant="2" id="obx-XS-qqN"/>
+                <constraint firstItem="Zs4-By-UFD" firstAttribute="width" secondItem="b1u-2E-VdG" secondAttribute="width" id="or9-fU-Ok4"/>
+                <constraint firstItem="vhB-TX-opZ" firstAttribute="centerY" secondItem="b1u-2E-VdG" secondAttribute="centerY" constant="-9" id="ver-3A-AWV"/>
+                <constraint firstAttribute="bottom" secondItem="Zs4-By-UFD" secondAttribute="bottom" id="wgJ-Ij-sNt"/>
+                <constraint firstAttribute="trailing" secondItem="vhB-TX-opZ" secondAttribute="trailing" constant="2" id="yeF-vA-ClY"/>
+            </constraints>
+            <point key="canvasLocation" x="387.5" y="369.5"/>
+        </view>
+        <customObject id="BPA-zT-VgI" customClass="TimelineCollectionViewItem">
+            <connections>
+                <outlet property="bgbox" destination="iff-mK-X7H" id="uEq-t8-9BP"/>
+                <outlet property="frameTime" destination="Zs4-By-UFD" id="Eu6-AO-xlC"/>
+                <outlet property="thumbImage" destination="vhB-TX-opZ" id="te3-QG-LmU"/>
+                <outlet property="view" destination="b1u-2E-VdG" id="ZVC-7h-bXX"/>
+            </connections>
+        </customObject>
+        <userDefaultsController representsSharedInstance="YES" id="BhM-cb-ib3"/>
+    </objects>
+</document>
